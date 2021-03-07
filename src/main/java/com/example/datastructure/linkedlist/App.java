@@ -1,25 +1,28 @@
 package com.example.datastructure.linkedlist;
 
+import com.example.adt.stack.Stack;
 import com.example.datastructure.linkedlist.SinglyLinkedList.SingleLinkedList;
 import com.example.datastructure.linkedlist.DoublyLinkedList.DoublyLinkedList;
+import com.example.datastructure.stack.LinkedListStack;
 
 
 public class App {
     public static void main(String[] args) {
-        SingleLinkedList<Person> singleLinkedList = new SingleLinkedList<>();
-        Person p = new Person(24,"adam");
+        Stack<String> s = new LinkedListStack<>();
 
-        singleLinkedList.insert(p);
-        singleLinkedList.insert(new Person(34,"steve"));
-        singleLinkedList.insert(new Person(64,"greg"));
-        singleLinkedList.remove(p);
-        singleLinkedList.traverse();
-        System.out.println("");
+        s.push("Khalid");
+        System.out.println(s.size());
+        s.push("Mohamed");
+        s.push("Adam");
+        s.push("Xavier");
+        s.push("Joe");
+        s.push("James");
 
-        DoublyLinkedList<String> doublyLinkedList = new DoublyLinkedList<>();
-        doublyLinkedList.insertEnd("Robert");
-        doublyLinkedList.insertEnd("Carol");
-        doublyLinkedList.insertBeggining("Greg");
-        doublyLinkedList.traverse();
+
+        System.out.println(s.size());
+        System.out.println(s.peek());
+        System.out.println(s.pop());
+        System.out.println(s.size());
+        System.out.println(s.pop());
     }
 }
