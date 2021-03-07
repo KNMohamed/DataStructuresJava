@@ -1,4 +1,4 @@
-package com.example.datastructure.linkedlist;
+package com.example.datastructure;
 
 import com.example.adt.stack.Stack;
 import com.example.datastructure.linkedlist.SinglyLinkedList.SingleLinkedList;
