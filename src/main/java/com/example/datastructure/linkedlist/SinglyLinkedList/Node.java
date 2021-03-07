@@ -1,4 +1,4 @@
-package com.example.datastructure.linkedlist.SingeLinkedList;
+package com.example.datastructure.linkedlist.SinglyLinkedList;
 
 public class Node<T extends Comparable<T>> {
     private T data;

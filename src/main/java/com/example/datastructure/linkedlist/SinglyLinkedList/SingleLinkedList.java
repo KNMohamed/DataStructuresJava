@@ -1,4 +1,4 @@
-package com.example.datastructure.linkedlist.SingeLinkedList;
+package com.example.datastructure.linkedlist.SinglyLinkedList;
 
 import com.example.datastructure.linkedlist.List;
 
@@ -86,4 +86,26 @@ public class SingleLinkedList<T extends Comparable<T>> implements List<T> {
     public void setRootNode(Node<T> rootNode) {
         this.rootNode = rootNode;
     }
+
+
+    /**
+     * In place solution to reverse a singly linked list
+     * Time Complexity: O(N)
+     */
+    public void reverse() {
+        if(numberOfNodes == 0) return;
+        Node<T> current = rootNode;
+        Node<T> previous = null;
+        Node<T> next = null;
+
+        while(current != null){
+            next = current.getNextNode();
+            current.setNextNode(previous);
+            previous = current;
+            current = next;
+        }
+
+        setRootNode(previous);
+    }
 }
+

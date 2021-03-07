@@ -1,6 +1,6 @@
 package com.example.datastructure.linkedlist;
 
-import com.example.datastructure.linkedlist.SingeLinkedList.SingleLinkedList;
+import com.example.datastructure.linkedlist.SinglyLinkedList.SingleLinkedList;
 import com.example.datastructure.linkedlist.DoublyLinkedList.DoublyLinkedList;
 
 
