@@ -1,14 +1,12 @@
 package com.example.datastructure;
 
-import com.example.adt.stack.Stack;
-import com.example.datastructure.linkedlist.SinglyLinkedList.SingleLinkedList;
-import com.example.datastructure.linkedlist.DoublyLinkedList.DoublyLinkedList;
+import com.example.adt.stack.IStack;
 import com.example.datastructure.stack.LinkedListStack;
 
 
 public class App {
     public static void main(String[] args) {
-        Stack<String> s = new LinkedListStack<>();
+        IStack<String> s = new LinkedListStack<>();
 
         s.push("Khalid");
         System.out.println(s.size());

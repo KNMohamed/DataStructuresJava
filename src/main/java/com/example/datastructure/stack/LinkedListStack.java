@@ -1,6 +1,6 @@
 package com.example.datastructure.stack;
 
-import com.example.adt.stack.Stack;
+import com.example.adt.stack.IStack;
 import com.example.datastructure.linkedlist.SinglyLinkedList.SingleLinkedList;
 import java.util.EmptyStackException;
 
@@ -9,7 +9,7 @@ import java.util.EmptyStackException;
  * @author Khalid Mohames
  * A Generic Stack implementation using a LinkedList
  */
-public class LinkedListStack<T extends Comparable<T>> implements Stack<T> {
+public class LinkedListStack<T extends Comparable<T>> implements IStack<T> {
     private SingleLinkedList<T> linkedList = new SingleLinkedList<>();
     int count;
 
