@@ -1,9 +1,10 @@
 # Data Structures Implementation in Java
-
+# LeetCode Algorithmic Challenges in Java
 
 ### This repository contains the following data strucutres implemented in Java available for generic types
 1) Singly Linked List e.x a -> b -> c
-2) Doubly Linked List e.x a >><- b -><- c
+2) Doubly Linked List e.x a -><- b -><- c
+3) Stack
 
 ### The following data structures are pending implementation
 1) Stack
