@@ -1,15 +1,14 @@
 package com.example.datastructure;
 
 import com.example.adt.stack.IStack;
-import com.example.datastructure.stack.LinkedListStack;
+import com.example.datastructure.stack.Stack;
 
 
 public class App {
     public static void main(String[] args) {
-        IStack<String> s = new LinkedListStack<>();
+        IStack<String> s = new Stack<>();
 
         s.push("Khalid");
-        System.out.println(s.size());
         s.push("Mohamed");
         s.push("Adam");
         s.push("Xavier");
@@ -17,10 +16,8 @@ public class App {
         s.push("James");
 
 
-        System.out.println(s.size());
-        System.out.println(s.peek());
-        System.out.println(s.pop());
-        System.out.println(s.size());
-        System.out.println(s.pop());
+        while(!s.isEmpty()){
+            System.out.println(s.pop());
+        }
     }
 }
