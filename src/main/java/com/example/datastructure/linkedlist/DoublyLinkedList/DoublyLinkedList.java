@@ -1,5 +1,5 @@
 package com.example.datastructure.linkedlist.DoublyLinkedList;
-import com.example.adt.linkedlist.List;
+import com.example.datastructure.linkedlist.List;
 
 public class DoublyLinkedList<T extends Comparable<T>> implements List<T> {
     private Node<T> head;

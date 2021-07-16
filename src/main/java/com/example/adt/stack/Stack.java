@@ -1,4 +1,4 @@
-package com.example.datastructure.stack;
+package com.example.adt.stack;
 
 import com.example.adt.stack.IStack;
 

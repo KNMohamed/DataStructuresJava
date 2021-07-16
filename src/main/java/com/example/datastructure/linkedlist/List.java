@@ -1,4 +1,4 @@
-package com.example.adt.linkedlist;
+package com.example.datastructure.linkedlist;
 
 public interface List<T> {
     public void insert(T data);

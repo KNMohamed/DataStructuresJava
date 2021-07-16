@@ -1,6 +1,6 @@
 package com.example.datastructure.linkedlist.SinglyLinkedList;
 
-import com.example.adt.linkedlist.List;
+import com.example.datastructure.linkedlist.List;
 
 public class SingleLinkedList<T extends Comparable<T>> implements List<T> {
     private Node<T> rootNode;

@@ -1,7 +1,7 @@
 package com.example.dijkistra;
 
 import com.example.adt.stack.IStack;
-import com.example.datastructure.stack.LinkedListStack;
+import com.example.adt.stack.LinkedListStack;
 import java.util.Scanner;
 
 public class Interpreter {

@@ -1,7 +1,7 @@
 package com.example.datastructure;
 
 import com.example.adt.stack.IStack;
-import com.example.datastructure.stack.Stack;
+import com.example.adt.stack.Stack;
 
 
 public class App {
