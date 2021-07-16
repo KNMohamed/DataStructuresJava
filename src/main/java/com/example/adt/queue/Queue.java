@@ -45,8 +45,8 @@ public class Queue<T extends Comparable<T>> {
         return data;
     }
 
-    public T peek(){
-        if(isEmpty()) return null;
+    public T peek() {
+        if (isEmpty()) return null;
         return this.firstNode.getData();
     }
 }
