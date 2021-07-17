@@ -5,13 +5,17 @@ import java.util.Queue;
 
 public class App {
     public static void main(String[] args) {
-        Queue<Integer> q = new LinkedList<Integer>();
-        q.add(5);
-        q.add(9);
-        q.add(12);
+        QueueStack<Integer> q = new QueueStack<>();
+        q.enqueue(5);
+        q.enqueue(9);
+        q.enqueue(12);
 
-        while(!q.isEmpty()){
-            System.out.println(q.remove());
-        }
+        System.out.println(q.dequeue());
+
+        q.enqueue(100);
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+
     }
 }
