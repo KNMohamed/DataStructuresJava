@@ -1,11 +1,8 @@
 package com.example.adt.queue;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class App {
     public static void main(String[] args) {
-        QueueStack<Integer> q = new QueueStack<>();
+        QueueRecursiveStack<Integer> q = new QueueRecursiveStack<>();
         q.enqueue(5);
         q.enqueue(9);
         q.enqueue(12);
