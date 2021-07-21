@@ -23,17 +23,13 @@ public class TreeHelper<T extends Comparable<T>> {
 
     /**
      * Recursive solution to determine the total count of nodes
-     * @param t
+     * @param node
      * @return the total amount of nodes in the tree
      */
-    public int getNumOfNodes(Node<T> t){
-        if(t == null) return 0;
-        return numOfNode(t) - 1;
-    }
-    private int numOfNode(Node<T> node) {
-        if(node == null) return 1;
+    public int getNumOfNodes(Node<T> node) {
+        if(node == null) return 0;
 
-        return numOfNode(node.getLeftChild()) + numOfNode(node.getRightChild());
+        return (getNumOfNodes(node.getLeftChild()) + getNumOfNodes(node.getRightChild()) + 1);
     }
 }
 
