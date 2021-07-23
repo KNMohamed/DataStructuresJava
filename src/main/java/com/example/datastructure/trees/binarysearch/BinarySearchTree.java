@@ -122,6 +122,11 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T>{
         return node;
     }
 
+    public int getFamilyTotalAge(Node<Person> familyTree){
+        if(familyTree == null) return 0;
+        return getFamilyTotalAge(familyTree.getLeftChild()) + getFamilyTotalAge(familyTree.getRightChild()) + familyTree.getData().getAge();
+    }
+
     @Override
     public void traverse() {
         //in-order traversal in O(N) time
