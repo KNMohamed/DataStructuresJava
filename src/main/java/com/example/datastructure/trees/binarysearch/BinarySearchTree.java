@@ -2,8 +2,6 @@ package com.example.datastructure.trees.binarysearch;
 
 import com.example.datastructure.trees.Tree;
 
-import java.util.NoSuchElementException;
-
 public class BinarySearchTree<T extends Comparable<T>> implements Tree<T>{
     private Node<T> root;
 
